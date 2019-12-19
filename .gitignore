@@ -1,0 +1,4 @@
+converter/test/*
+*/.idea/*
+*.iml
+*__pycache__
