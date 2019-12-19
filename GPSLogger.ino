@@ -47,7 +47,7 @@ static void GPSloop()
   if (gps.available()) {
     gps_fix fix = gps.read();
 //    trace_header(DEBUG_PORT);
-    trace_all(DEBUG_PORT, gps, fix);
+//    trace_all(DEBUG_PORT, gps, fix);
     // Log the fix information if we have a location and time
     if (fix.valid.location && fix.valid.time && fix.valid.date) {
       DEBUG_PORT.println("valid fix");

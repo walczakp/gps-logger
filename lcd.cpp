@@ -90,7 +90,11 @@ void lcdPrintTime(NeoGPS::time_t dateTime, long msLeftToWrite) {
     nokiaLcd.print(ZERO);
   nokiaLcd.print((uint8_t) dateTime.seconds);
   nokiaLcd.setCursor(60, 5);
-  nokiaLcd.print(msLeftToWrite);
+  if (msLeftToWrite > 0) {
+    nokiaLcd.print(msLeftToWrite);
+  } else {
+    nokiaLcd.print("****");
+  }
 }
 
 void lcdInit() {

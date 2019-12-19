@@ -54,8 +54,8 @@ void sdInit()
   DEBUG_PORT.println( F("  SD card initialized.") );
   
   sdCardType = sdFetchType();
-  lcdClearLine(0, 0);
   float s = sdGetSize();
+  lcdClearLine(0, 0);
   lcdPrintSDStat(s, sdCardType);
   // Pick a numbered filename, 00 to 99.
 //  char filename[15] = "data_##.txt";
