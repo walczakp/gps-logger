@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 # constants
-PATH_SPLIT_THRESHOLD = timedelta(seconds=15)
+PATH_SPLIT_THRESHOLD = timedelta(seconds=60)
 
 # methods
 def to_datetime(row):
